@@ -34,6 +34,6 @@ upload-artifact:
     
     - name: Upload index.html as an artifact
       uses: actions/upload-artifact@v4
-    with:
-      name: webpage
-      path: index.html
+      with:
+        name: webpage
+        path: index.html
