@@ -20,9 +20,9 @@ deploy:
   needs: build
   steps:
     - name: Checkout repository
-    uses: actions/checkout@v4
+      uses: actions/checkout@v4
     - name: Deploy step
-    run: echo "Deployment successful to staging"
+      run: echo "Deployment successful to staging"
 
     
 upload-artifact:
@@ -34,5 +34,5 @@ upload-artifact:
     - name: Upload index.html as an artifact
     uses: actions/upload-artifact@v4
     with:
-    name: webpage
-    path: index.html
+      name: webpage
+      path: index.html
