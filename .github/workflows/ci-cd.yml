@@ -30,10 +30,10 @@ upload-artifact:
   needs: build
   steps:
     - name: Checkout repository
-    uses: actions/checkout@v4
+      uses: actions/checkout@v4
     
     - name: Upload index.html as an artifact
-    uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
     with:
       name: webpage
       path: index.html
